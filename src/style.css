@@ -1,0 +1,93 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: dodgerblue;
+}
+
+input[type="text"] {
+  padding: 8px;
+  font-size: 1.5rem;
+  outline: none;
+  border: 1px solid #64f5ff;
+  border-radius: 5px;
+  color: rgb(4, 4, 4);
+}
+
+#todo-form>button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  color: blue;
+  border-color: #646cff;
+  background-color: white;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+#todo-form>button:hover {
+  color: white;
+  background-color: blue;
+}
+
+.todo-contener {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.todo-contener div {
+  width: 70%;
+  height: 70px;
+  border: 1px solid;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.todo-contener input[type="checkbox"] {
+  width: 2rem;
+  height: 2rem;
+}
+.todo-contener p{
+  width: 65%;
+  height: fit-content;
+  text-align: start;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.todo-contener .tittle {
+  color: rgb(65, 14, 176); 
+}
+
+.todo-contener .completed {
+  color: rgb(0, 128, 30);
+  text-decoration:line-through;
+}
+
+.todo-contener .delete-btn {
+  border: none;
+  background: none;
+  color: red;
+  font-size: 2rem;
+  font-style: italic;
+  cursor: pointer;
+}
